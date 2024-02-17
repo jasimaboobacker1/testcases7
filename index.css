@@ -4,6 +4,8 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 400;
 }
 nav{
     background-color: white;
@@ -12,9 +14,9 @@ nav{
     padding: 0 10px;
 }
 .logo{
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 15px;
 }
 
@@ -62,9 +64,7 @@ section img{
 }
 
 @media (max-width: 858px){
-  .checkbtn{
-    display: block;
-   }
+  
    ul {
     position: absolute;
     width: 100%;
@@ -110,6 +110,8 @@ section img{
     background-size: cover;
     object-fit: fill;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -188,7 +190,7 @@ section img{
 .line1,.line2{
     align-items: start;
     height: 3px;
-    background-color: aqua;
+    background-color: rgb(10, 175, 175);
     margin: 3.5px;
   
     
@@ -238,11 +240,12 @@ section img{
     padding: 49px;
 }
 .head{
-    width: 100%;
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ 
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 .categories{
     width: auto;
@@ -262,7 +265,7 @@ section img{
 .categoryline1,.categoryline2{
     align-items: start;
     height: 3px;
-    background-color: aqua;
+    background-color: rgb(10, 175, 175);
     margin: 3.5px;  
 }
 
@@ -452,7 +455,7 @@ section img{
     padding: 10px;
 }
 .iconnn{
-    background-color: rgb(2, 252, 252);
+    background-color: rgb(10, 175, 175);
     width: 33px;
     height: 33px;
     display: flex;
@@ -488,6 +491,7 @@ section img{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+  
 
 }
 .picicon{
@@ -495,7 +499,7 @@ section img{
     height: 110px;
     background-color: #fefdfd;
     border-radius: 50%;
-    border: 2px solid grey;
+    border: 2px solid rgb(163, 162, 162);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -509,6 +513,24 @@ section img{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.iconpic2{
+    width: 90px;
+    height: 90px;
+    background-color: #393737;
+    border-radius: 50%;
+    background-image: url('Assets/images/revw2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.iconpic3{
+    width: 90px;
+    height: 90px;
+    background-color: #393737;
+    border-radius: 50%;
+    background-image: url('Assets/images/revw3.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .rvww1{
     width: 100%;
     height: auto;
@@ -516,7 +538,7 @@ section img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to left, rgba(5, 251, 251, 0.241), white);
+    background-image: linear-gradient(to left, rgba(7, 145, 145, 0.774), white);
 }
 .rvww2{
     width: 100%;
@@ -525,7 +547,7 @@ section img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: cyan;
+    background-color: rgb(10, 175, 175);
 }
 .rvww3{
     width: 100%;
@@ -534,7 +556,7 @@ section img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right, rgba(5, 251, 251, 0.222), white);
+    background-image: linear-gradient(to right, rgba(7, 145, 145, 0.774), white);
 }
 .footer{
     width: 100%;
@@ -549,16 +571,19 @@ section img{
     width: 100%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     justify-content: space-between;
     padding: 2px;
+    padding-bottom: 20px;
 }
 
 .box1{
     width: 150px;
     height: 200px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 .box1 li{
@@ -607,6 +632,7 @@ section img{
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: white;
     
 }
 .imageee{
@@ -629,15 +655,49 @@ section img{
     padding-top: 10px;
     padding-left: 10px;
 }
+.lower{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 15px;
+}
+.copyright{
+    width: auto;
+    height: auto;
+    padding: 5px;
+    color: white;
+}
+.menusss{
+    width: auto;
+    height: auto;
+    display: flex;
+    padding: 5px;
+}
+.divvvv{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-left: 1px solid grey;
+}
+
+.divvvvvv{
+    width: 100%;
+    height: 100%;
+
+}
 
 
 
 @media (max-width:480px){
     
-    
 .landing-page{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url('Assets/images/landingimage.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -646,6 +706,7 @@ section img{
     justify-content: center;
     position: absolute;
     align-items: center;
+    padding: 15px;
 }
 
 .landing-content h1 {
@@ -657,16 +718,16 @@ section img{
     margin-right: 40px;
 }
 
-
-.first-section{
+.first-section {
     width: 100%;
     height: auto;
-    background-color: white; 
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 25px;
     padding-bottom: 25px;
+    margin-top: 650px;
 }
 
 .box{
@@ -718,14 +779,13 @@ section img{
 }
 
 .gallery {
-    width: 900px;
+    width: 750px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-
 }
 .right {
     width: 48%;
@@ -793,15 +853,9 @@ section img{
     margin-top: 40px;
     margin-left: 60px;
 }
-.reviewcard1,.reviewcard2,.reviewcard3{
-    margin-left: 60px;
+.box1{
+    display:none ;
+    color: white;
 }
-.smallboxes{
-    margin-left: 60px;
- 
-}
-.head{
-    margin-left: 60px;
 }
 
-}
