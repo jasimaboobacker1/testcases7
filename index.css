@@ -67,7 +67,7 @@ section img{
    ul{
     position: absolute;
     width: 100%;
-    height:calc(100vh - 80px);;
+    height:100vh;
     background: #2c3e50;
     top:80px ;
     left: -100%;
@@ -706,22 +706,30 @@ section img{
 
 
 @media (max-width:480px){
+    body{
+        border: 1px solid;
+    }
     
     
 .landing-page{
     width: 100%;
-    height:calc(100vh - 85px);
+    height: 100vh;
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url('Assets/images/landingimage.png');
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: fill;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    position: absolute;
     align-items: center;
-    padding: 15px;
-    z-index: 1;
 }
+
+
+
+.landing-h3{
+    font-size: 15px;
+}
+
 .second-section-image {
     width: 400px;
     height: 440px;
@@ -734,9 +742,9 @@ section img{
     font-size: 50px;
 }
 .landing-content {
-    width: 500px;
+    width: 100%;
     color: white;
-    margin-right: 40px;
+    margin-right: 80px;
 }
 
 .first-section {
@@ -748,7 +756,7 @@ section img{
     justify-content: space-around;
     padding-top: 25px;
     padding-bottom: 25px;
-    margin-top: 650px;
+    /* margin-top: 650px; */
 }
 
 .box{
@@ -770,6 +778,7 @@ section img{
     padding: 20px; 
 }
 .second-section{
+    display: none;
     height: auto;
 }
 
@@ -798,9 +807,19 @@ section img{
     margin-bottom: 10px;
 
 }
+.fourth-section {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .gallery {
-    width: 750px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -809,9 +828,9 @@ section img{
     align-items: center;
 }
 .right {
-    width: 48%;
+    width: 270px;
     height: 300px;
-    margin: 10px;
+    margin: 20px;
     background-image: url(Assets/images/onlinemarketing.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -825,6 +844,14 @@ section img{
     flex-direction: column;
     align-items: center;
 }
+.left {
+    width: 270px;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .one {
     width: 100%;
     height: 300px;
@@ -834,10 +861,9 @@ section img{
     position: relative;
 }
 .two {
-    display: none;
     width: 100%;
     height: 300px;
-    background-image: url(Assets/images/graphic.avif);
+    background-image: url(Assets/images/editing.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -852,6 +878,12 @@ section img{
     flex-direction: column;
     margin-bottom: 10px;
 }
+.pop-card h2{
+       font-family: Fredoka, sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+    
+}
 .expert-card{
     width: 300px;
     height: 450px;
@@ -861,7 +893,11 @@ section img{
     align-items: center;
     position: relative;
     margin-top: 20px;
-    margin-left: 30px;
+}
+.head h1 {
+    font-family: Fredoka, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
 }
 .popular-cards{
     width: 100%;
@@ -870,9 +906,8 @@ section img{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    justify-content: space-between;
     margin-top: 40px;
-    margin-left: 60px;
+    /* margin-left: 38px; */
 }
 .box1{
     display:none ;
